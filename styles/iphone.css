@@ -1,0 +1,332 @@
+@import url("common.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css");
+
+/* 공통 헤더 css */
+#global-header {
+    background: rgb(250, 250, 252);
+}
+
+#global-header .global-nav {
+    width: 1024px;
+    height: 44px;
+    padding: 0 22px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#global-header .global-nav .global-nav-list {
+    width: 100%;
+    height: 44px;
+    margin: 0 -8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.global-nav-list .global-nav-logo img {
+    width: 30px;
+    height: 44px;
+    object-fit: contain;
+    vertical-align: middle;
+}
+
+.global-nav-list li {
+    padding: 0 8px;
+}
+
+.global-nav-list li a {
+    height: 44px;
+    color: rgba(0, 0, 0, .8);
+    padding: 0 8px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1;
+}
+/* /공통 헤더 css */
+
+/* 제품 선택 네비게이션 영역(chapter-nav) */
+#chapter-nav {
+    width: 100%;
+    padding: 16px 0;
+    background: #FAFAFC;
+}
+#chapter-nav .chapter-nav-wrapper {
+    height: 100%;
+    padding: 0 34px 14px 34px;
+}
+#chapter-nav .chapter-nav-wrapper .chapter-nav-items {
+    padding-top: 4px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chapter-nav-items .chapter-nav-item {
+    padding: 0 20px;
+}
+.chapter-nav-items .chapter-nav-item:first-child {
+    padding-left: 4px;
+}
+.chapter-nav-items .chapter-nav-item:last-child {
+    padding-right: 4px;
+}
+.chapter-nav-items .chapter-nav-item a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.chapter-nav-items .chapter-nav-item a span {
+    font-size: 12px;
+    line-height: 1.33;
+    font-weight: 300;
+}
+/* /제품 선택 네비게이션 영역(chapter-nav) */
+
+/* 메인 영역 */
+
+/* 리본 영역 */
+#iphone-main .section-ribbon {
+    width: 100%;
+    padding: 9px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F5F5F7;
+}
+#iphone-main .section-ribbon .ribbon-wrapper {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ribbon-wrapper p {
+    color: #1D1D1F;
+    font-size: 12px;
+    line-height: 1.4;
+    font-weight: 500;
+    letter-spacing: 0;
+}
+.ribbon-wrapper p .footnote a {
+    text-decoration: underline;
+    text-underline-offset: -0.28em;
+}
+.ribbon-wrapper p>a {
+    color: #0071E3;;
+}
+/* /리본 영역 */
+
+/* 웰컴 섹션 */
+#iphone-main .section-welcome {
+    width: 100%;
+    padding-top: 80px;
+    background: rgb(255,255,255);
+    color: #1D1D1F;
+}
+#iphone-main .section-welcome .section-welcome-content {
+    width: 1680px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.section-welcome-content .welcome-content-title {
+    font-size: 80px;
+    font-weight: 600;
+}
+.section-welcome-content .welcome-content-description {
+    font-size: 24px;
+    font-weight: 600;
+}
+#iphone-main .section-welcome .section-welcome-photo {
+    width: 87.5%;
+    height: 680px;
+    margin: 0 auto;
+}
+.section-welcome-photo .welcome-photo-wrapper {
+    width: 100%;
+    height: 100%;
+    border-radius: 44px;
+    overflow: hidden;
+}
+.section-welcome-photo .welcome-photo-wrapper .welcome-photo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* /웰컴 섹션 */
+
+/* 컨시더 섹션 */
+#iphone-main .section-consider {
+    width: 100%;
+    padding: 150px 0;
+    background: rgb(255,255,255);
+    color: #1D1D1F;
+}
+#iphone-main .section-consider .section-consider-content {
+    width: 1680px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.section-consider-content .consider-content-title {
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 1.18;
+}
+#iphone-main .section-consider .section-consider-photos {
+    padding: 0 150px;
+    margin: 0 auto;
+}
+.section-consider-photos .consider-photos-set {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section-consider-photos .consider-photos-set .consider-photos {
+    width: 405px;
+    height: 748px;
+    color: #f5f5f7;
+    position: relative;
+    overflow: hidden;
+    border-radius: 28px;
+}
+.consider-photos .consider-photos-description {
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    z-index: 2;
+}
+.consider-photos .consider-photos-description .consider-photos-label {
+    line-height: 1.35;
+    letter-spacing: 0;
+    font-size: 17px;
+    font-weight: 600;
+}
+.consider-photos .consider-photos-description .consider-photos-headline {
+    margin-top: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.25;
+}
+.consider-photos .consider-photos-description .consider-photos-headline sup {
+    font-size: 16px;
+    vertical-align: super;
+    line-height: 1;
+}
+.consider-photos .consider-photos-description .consider-photos-headline sup a {
+
+    text-decoration: underline;
+    text-underline-offset: 0.1em;
+}
+.consider-photos .consider-photos-description .consider-photos-disclaimer {
+    margin-top: 8px;
+    font-size: 8px;
+    font-weight: 400;
+}
+.consider-photos .consider-photos-description .consider-photos-disclaimer sup {
+    font-size: 6px;
+    vertical-align: super;
+    line-height: 1;
+}
+.consider-photos .consider-photos-description .consider-photos-disclaimer sup a {
+    text-decoration: underline;
+    text-underline-offset: 0.1em;
+}
+.consider-photos .consider-photos-img {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.consider-photos:last-child .consider-photos-description {
+    color: #1D1D1F;
+}
+/* /컨시더 섹션 */
+
+/* /메인 영역 */
+
+/* 푸터 영역 */
+footer {
+    display: flex;
+    justify-content: center;
+    background: #f3f3f5;
+    font-size: 12px;
+}
+footer .footer-box {
+    width: 980px;
+    /*height: 1024px;*/
+}
+
+footer .foot-notes{
+    font-size: 10px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    /*height: 220px;*/
+    line-height: 15px;
+    word-spacing: 1px;
+    opacity: 0.6;
+}
+footer .foot-notes p{
+    margin-bottom: 10px;
+}
+
+footer .link-directory{
+    display: flex;
+    margin-bottom: 25px;
+    /*border: 4px solid green;*/
+}
+footer .link-directory .link-directory-column {
+    width: 176px;
+    margin-right: 20px;
+}
+footer .link-directory .link-directory-column h2{
+    margin-bottom: 10px;
+    margin-top: 25px;
+    font-weight: 700;
+}
+footer .link-directory .link-directory-column ul li{
+    margin-bottom: 12px;
+}
+
+footer .shopping{
+    margin-bottom: 20px;
+}
+footer .shopping a{
+    color: #0065ca;
+    text-decoration: underline;
+
+}
+
+
+footer .foot-information .Copyright-others{
+    display: flex;
+    justify-content: space-between;
+    margin:20px 0;
+}
+footer .foot-information .Copyright-others .link-container{
+    width: 60%;
+}
+footer .foot-information .other-information{
+    font-size: 11px;
+    opacity: 0.6;
+}
+footer .foot-information .other-information a{
+    opacity: 1;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+footer .foot-information{
+    /*border: 4px solid blue;*/
+}
+/* /푸터 영역 */

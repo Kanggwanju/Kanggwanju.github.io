@@ -1,0 +1,234 @@
+@import "common.css";
+@import "iphone.css";
+/*@import는 그 위치에 css가 있는 것으로
+@import 아래 쓰면 덮어쓰기 가능*/
+
+#global-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background: rgba(250, 250, 252,0.8);
+    backdrop-filter: blur(13px);/*배경에 블러 처리*/
+}
+
+#global-header .global-nav {
+    width: 1024px;
+    opacity: 1;
+}
+body {
+    font-family: "Inter", sans-serif;
+}
+
+main .top-section .card {
+    background: #f3f3f5;
+    width: 1980px;
+    height: 700px;
+    margin-bottom:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .top-section .card-1{
+    background: url("../img/top-section-1.png")
+    no-repeat center/cover;
+}
+main .top-section .card-1-title{
+    display: flex;
+    align-items: flex-end;
+    height: 60px;
+    font-size: 61px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 55px;
+}
+main .top-section .card-1-title img {
+    margin-bottom: 8px;
+    margin-right: 10px;
+    height: 100%;
+}
+main .top-section .card-1-text{
+    /*border: 4px solid orange;*/
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 28px;
+    line-height: 45px;
+    margin-top: -10px;
+}
+main .top-section .card-1-text  .mini-text{
+    font-size: 23px;
+    letter-spacing: 4px;
+    font-weight: 700;
+}
+main .top-section .card-1-buttons{
+    height: 40px;
+    width: 230px;
+    /*border: 4px solid blue;*/
+    margin-top: 35px;
+}
+
+main .top-section .card-2{
+    background: url("../img/top-section-2.png")
+    no-repeat center/cover;
+}
+main .top-section .card-2-title{
+    /*border: 4px solid red;*/
+    display: flex;
+    justify-content: center;
+    height: 66px;
+    font-size: 60px;
+    font-weight: 700;
+    /*margin-bottom: 10px;*/
+    margin-top: 55px;
+}
+main .top-section .card-2-text{
+    /*border: 4px solid orange;*/
+    height: 55px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+main .top-section .card-2-buttons{
+    /*border: 4px solid blue;*/
+    margin-bottom: 30px;
+}
+
+
+main .top-section .card-3{
+    background: url("../img/top-section-3.png")
+    no-repeat center/cover;
+}
+main .top-section .card-3-title{
+    /*border: 4px solid red;*/
+    display: flex;
+    justify-content: center;
+    height: 66px;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 55px;
+}
+main .top-section .card-3-text{
+    /*border: 4px solid orange;*/
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 15px;
+}
+main .top-section .card-3-buttons{
+    /*border: 4px solid blue;*/
+    margin-bottom: 380px;
+}
+
+main button{
+    height: 45px;
+    font-size: 15px;
+    border-radius: 22px;
+    border: 2px solid #0070e1;
+}
+.blue-button{
+    background: #0070e1;
+    border: 2px solid #0070e1;
+    width: 110px;
+    color: #ffffff  ;
+}
+.white-button{
+    background: inherit;
+    width: 100px;
+    color: #0070e1  ;
+    margin-left: 15px;
+}
+
+main .top-section .apple-ad{
+    height: 60px;
+}
+main .top-section .apple-ad .rainbow-font{
+
+    /*배경에 그라데이션 넣기*/
+    background: linear-gradient(to right, #0a8cf5, #f2530b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 23px;
+}
+main .top-section .apple-ad p {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background: #f3f3f5;
+    font-size: 12px;
+}
+footer .footer-box {
+    width: 980px;
+    height: 1024px;
+}
+
+footer .foot-notes{
+    font-size: 10px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    height: 220px;
+    line-height: 15px;
+    word-spacing: 1px;
+    opacity: 0.6;
+}
+footer .foot-notes p{
+    margin-bottom: 10px;
+}
+
+footer .link-directory{
+    display: flex;
+    margin-bottom: 25px;
+    /*border: 4px solid green;*/
+}
+footer .link-directory .link-directory-column {
+    width: 176px;
+    margin-right: 20px;
+}
+footer .link-directory .link-directory-column h2{
+    margin-bottom: 10px;
+    margin-top: 25px;
+    font-weight: 700;
+}
+footer .link-directory .link-directory-column ul li{
+    margin-bottom: 12px;
+}
+
+footer .shopping{
+    margin-bottom: 20px;
+}
+footer .shopping a{
+    color: #0065ca;
+    text-decoration: underline;
+
+}
+
+
+footer .foot-information .Copyright-others{
+    display: flex;
+    justify-content: space-between;
+    margin:20px 0;
+}
+footer .foot-information .Copyright-others .link-container{
+    width: 60%;
+}
+footer .foot-information .other-information{
+    font-size: 11px;
+    opacity: 0.6;
+}
+footer .foot-information .other-information a{
+    opacity: 1;
+    font-weight: 700;
+    text-decoration: underline;
+}

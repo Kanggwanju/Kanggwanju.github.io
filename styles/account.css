@@ -1,0 +1,354 @@
+/* account.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.ac-header{
+    height: 52px;
+    width: 950px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    border-bottom: 1px solid rgba(0, 0, 0, .16);
+    margin: 0 auto;
+    align-items: center;
+    padding-top: 15px;
+    letter-spacing: 0;
+}
+.ac-header .ac-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+    justify-content: left;
+}
+.ac-header .ac-menu{
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    gap: 16px;
+}
+
+.container {
+    max-width: 483px;
+    margin: 50px auto;
+}
+.container .title-area{
+    text-align: center;
+}
+.container .title-area .title{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.container .title-area p{
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+.container .title-area .link{
+    color: #0071e3;
+    padding-right: 16px;
+    position: relative;
+}
+.container .title-area .link:hover{
+    text-decoration: underline;
+    color:#0066cc;
+}
+.container .title-area .link::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-image: url("ico-arrow.svg");
+    background-size: contain;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="tel"],
+form select {
+    width: 100%;
+    padding: 0.75rem;
+    /*margin: 0.5rem 0;*/
+    border: 1px solid #86868b;
+    height: 56px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+
+}
+.form-area {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.form-area .form-item{
+    padding: 20px 0;
+    border-bottom: 1px solid #e8e8ed;
+}
+
+.form-area .form-item:first-child{
+    padding-top: 0;
+}
+.form-area .form-item .small-text {
+    color: #424245;
+    font-size: 13px;
+}
+form {
+    background-color: white;
+    padding: 2rem 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
+}
+.form-area .form-item .name {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 14px;
+}
+
+.form-area .form-item .tel-desc{
+    font-size: 0.7rem;
+    margin-bottom: 16px;
+    line-height: 1.8;
+}
+
+form label {
+    display: block;
+    /*margin-top: 0.5rem;*/
+    font-weight: 400;
+    font-size: 0.9rem;
+    border-radius: 30%;
+}
+
+.row {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.row select {
+    flex: 1;
+}
+.checkbox-option{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.checkbox-option p {
+    font-size: 13.5px;
+    font-weight: 400;
+}
+.checkbox-option .radio-area input[type="radio"]{
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    position: absolute;
+    z-index: -11;
+}
+.checkbox-option .radio-area .radio{
+    position: relative;
+    padding-left: 26px;
+    cursor: pointer;
+}
+.checkbox-option .radio-area .radio::before{
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid #86868b;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+.checkbox-option .radio-area input[type="radio"]:checked + .radio::before{
+    border: 6px solid #0071e3;
+}
+.small-text {
+    font-size: 0.8rem;
+    color: #6e6e73;
+    margin: 14px 0;
+}
+.password-option {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.tel-option {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.tel p {
+    font-size: 0.1rem;
+}
+.notice-option,
+.agree-option {
+    font-size: 0.85rem;
+}
+
+.notice-option,
+.agree-option  {
+    display: flex;
+    gap: 0.5rem;
+    align-items: flex-start;
+}
+.notice-option {
+    margin-top: 14px;
+}
+.notice-option:first-child {
+    margin-top: 0;
+}
+.data-text {
+    padding-top: 20px;
+}
+.data-text p{
+    text-align: center;
+    background-image:url("https://www.apple.com/legal/images/icon_dataprivacy_2x.png");
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: 35px;
+    padding-top: 50px;
+}
+
+.notice-option label,
+.agree-option  label{
+    margin-top: 0;
+}
+.notice-option strong {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    color: #1d1d1f;
+}
+.notice-option span {
+    margin-top: 30px;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #626273;
+}
+.birth-area label {
+    margin-bottom: 10px;
+}
+
+form img {
+    width: 100%;
+    max-width: 300px;
+    margin: 1rem 0;
+}
+
+.image-text {
+    margin: 1rem 0;
+}
+
+.continue {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+.data-text {
+    font-size: 10px;
+    color: #6e6e73;
+    line-height: 1.5;
+}
+.data-text .login{
+    color: #0071e3;
+}
+.data-use{
+    font-size: 12.5px;
+    color: #1d1d1f;
+    line-height: 1.5;
+}
+.data-use .data-agree{
+    color: #0071e3;
+}
+.data-use .data-agree:hover{
+    text-decoration: underline;
+}
+.data-text .login:hover{
+    text-decoration: underline;
+    color: #0071e3;
+}
+button.continue-btn {
+    width: 100%;
+    min-height: 40px;
+    margin: auto;
+    background-color: #0071e3;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 13px;
+}
+
+.continue-btn:hover {
+    background-color: #005bb5;
+}
+
+.custom-select{
+    position: relative;
+    margin-bottom: 14px;
+}
+.custom-select label{
+    position: absolute;
+    font-size: 10px;
+    top: 12px;
+    left: 16px;
+}
+.custom-select select{
+    padding: 18px 12px 0 12px;
+}
+
+.form-area .form-item.captcha {
+    display: flex;
+    gap: 20px;
+}
+.form-area .form-item.captcha .image-text{
+    flex: 1;
+}
+footer{
+    height: 52px;
+    width: 950px;
+    font-size:12px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    margin: 0 auto;
+    align-items: center;
+    padding-bottom: 50px;
+    line-height: 20px;
+    color: #626273;
+    position: relative;
+}
+footer .ac-footer-shop .footer-shop:hover,
+footer .ac-footer-shop .reselling:hover{
+    text-decoration: underline;
+
+}
+footer .ac-footer-shop .footer-shop,
+footer .ac-footer-shop .reselling{
+    color: #0066cc;
+}
+footer .ac-footer-legal {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    color: #424245;
+
+}
+footer .footer-group{
+    margin-left: 20px;
+    word-spacing: 3px;
+}
+footer .korea{
+    position: absolute;
+    top: -3px;
+    right: 0;
+}
