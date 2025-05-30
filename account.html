@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Apple 계정 생성</title>
+    <!--  파비콘 삽입  -->
+    <link rel="icon" href="img/applelogo-favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/iphone.css">
+    <link rel="stylesheet" href="styles/account.css">
+</head>
+<body>
+    <!--  /공통 헤더  -->
+    <header id="global-header">
+        <nav class="global-nav">
+            <ul class="global-nav-list">
+                <li class="global-nav-logo">
+                    <a href="index.html"><img src="img/apple-header-logo.png" alt="Apple Logo"></a>
+                </li>
+                <li class="global-nav-store">
+                    <a href="#">스토어</a>
+                </li>
+                <li class="global-nav-mac">
+                    <a href="#">Mac</a>
+                </li>
+                <li class="global-nav-ipad">
+                    <a href="#">iPad</a>
+                </li>
+                <li class="global-nav-iphone">
+                    <a href="iphone.html">iPhone</a>
+                </li>
+                <li class="global-nav-watch">
+                    <a href="#">Watch</a>
+                </li>
+                <li class="global-nav-vision">
+                    <a href="#">Vision</a>
+                </li>
+                <li class="global-nav-airpods">
+                    <a href="#">AirPods</a>
+                </li>
+                <li class="global-nav-tv">
+                    <a href="#">TV 및 홈</a>
+                </li>
+                <li class="global-nav-entertainment">
+                    <a href="">엔터테인먼트</a>
+                </li>
+                <li class="global-nav-accessories">
+                    <a href="#">액세서리</a>
+                </li>
+                <li class="global-nav-support">
+                    <a href="account.html">고객지원</a>
+                </li>
+                <li class="global-nav-search">
+                    <a href="#"><i class="fas fa-search"></i></a>
+                </li>
+                <li class="global-nav-bag">
+                    <a href="account.html"><i class="fas fa-shopping-bag"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--  /공통 헤더  -->
+
+    <!-- ac헤더 -->
+        <div class="ac-header">
+            <div class="ac-title">
+                <a href="#">Apple 계정</a>
+            </div>
+            <ul class="ac-menu">
+                <li class="ac-login">
+                    <a href="#">로그인</a>
+                </li>
+                <li class="ac-create">
+                    <a href="#">Apple 계정 생성</a>
+                </li>
+                <li class="ac-aria">
+                    <a href="#">FAQ</a>
+                </li>
+            </ul>
+        </div>
+    <!--  ac헤더 -->
+
+    <div class="container">
+        <div class="title-area">
+            <h1 class="title">Apple 계정 생성</h1>
+            <p>하나의 Apple 계정으로 모든 Apple 서비스를 이용할 수 있습니다.</p>
+            <p>Apple 계정을 가지고 계십니까? <a href="#" class="link">로그인</a></p>
+        </div>
+        <div class="form-area">
+            <form>
+                <div class="form-item">
+                    <div class="name">
+                        <input type="text" placeholder="성">
+                        <input type="text" placeholder="이름">
+                    </div>
+                    <div class="custom-select">
+                        <label for="country">국가/지역</label>
+                        <select id="country">
+                            <option>대한민국</option>
+                            <option>한국</option>
+                            <option>북한</option>
+                        </select>
+                    </div>
+                    <div class="birth-area">
+                        <label>생년월일</label>
+                        <div class="row">
+                            <select>
+                                <option>연도</option>
+                                <option>2023</option>
+                                <option>2024</option>
+                                <option>2025</option>
+                                <option>2026</option>
+                            </select>
+                            <select>
+                                <option>월</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                            <select>
+                                <option>일</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="email-option">
+                        <input type="email" placeholder="name@example.com">
+                        <p class="small-text">새 Apple 계정으로 사용될 주소입니다.</p>
+                    </div>
+                        <div class="password-option">
+                        <input type="password" placeholder="암호">
+                        <input type="password" placeholder="암호 재입력">
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="tel-option">
+                        <select>
+                            <option>+82 (대한민국)</option>
+                        </select>
+
+                        <input type="tel" placeholder="전화번호">
+                        <p class="tel-desc">항상 사용할 수 있는 전화번호를 입력하십시오. 웹 브라우저나 새 기기에 로그인할 때 해당 전화번호를 사용하여 신원을 확인합니다. 메시지 또는
+                            데이터 요금이 적용될 수 있습니다.
+                        </p>
+                    </div>
+
+                    <div class="checkbox-option">
+                        <p>다음을 이용해 확인하십시오.</p>
+                        <div class="radio-area">
+                            <input type="radio" name="msg" id="sms">
+                            <label for="sms" class="radio"> 문자 메세지</label>
+                        </div>
+                        <div class="radio-area">
+                            <input type="radio" name="msg" id="voice">
+                            <label for="voice" class="radio">음성 메세지</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="notice-option">
+                        <input type="checkbox" id="notice">
+                        <label for="notice">
+                            <strong>공지사항</strong>
+                            <span>Apple 제품, 서비스 및 소프트웨어에 대한 공지사항, 마케팅, 추천 및 업데이트를 포함한 Apple 이메일과 소식을 수신합니다.</span>
+                        </label>
+                    </div>
+
+                    <div class="notice-option">
+                        <input type="checkbox" id="second">
+                        <label for="second">
+                            <strong>앱, 음악, TV 등</strong>
+                            <span>앱, 음악, 영화, TV, 도서, 팟캐스트 등의 신규 출시, 독점 콘텐츠, 특별 프로모션 및 마케팅과 추천을 포함한 Apple 이메일과 소식을 수신합니다.</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="agree-option">
+                        <input type="checkbox" id="agree">
+                        <label for="agree">
+                            <div class="data-use">
+                                <a href="#" class="data-agree">Apple의 개인정보 처리방침</a>에 따라 수집, 사용, 타사에 대한 제공 및 처리하는 데 동의합니다.
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-item captcha">
+                    <div class="img-box">
+                        <img src="data:image/jpeg;base64,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"
+                             alt="보안 이미지">
+                    </div>
+                    <div class="image-text">
+                        <input type="text" placeholder="이미지에 보이는 문자 입력">
+                    </div>
+                </div>
+                <!--        <img src="https://www.apple.com/legal/images/icon_dataprivacy_2x.png" alt="icon">-->
+                <div class="data-text">
+                    <p>
+                        Apple 계정 정보를 사용해 안전하게 계정에 로그인하고 데이터에 액세스합니다.
+                        Apple에서는 보안, 지원 및 보고 목적으로 특정 데이터를 기록합니다.
+                        동의하는 경우 Apple 서비스의 사용 정보에 기반한 마케팅 이메일과 소식 전송에 Apple 계정 정보를 사용할 수 있습니다.
+                        <a href="#" class="login">사용자의 데이터가 어떻게 관리되는지 보기</a>
+                    </p>
+                </div>
+                <div class="continue">
+                    <button type="submit" class="continue-btn">계속</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="ac-footer-shop">
+            <p>다양한 쇼핑 방법: <a href="#" class="footer-shop">Apple Store를 방문</a>하거나, <a href="#" class="reselling">리셀러</a>를 찾아보거나, 080-330-8877번으로 전화하세요.</p>
+            <div class="ac-footer-legal">
+                <p>Copyright © 2025 Apple Inc. 모든 권리 보유.</p>
+                <div class="footer-group">
+                    <a href="#" class="footer">개인정보 처리방침 |</a>
+                    <a href="#" class="footer">웹 사이트 이용 약관 |</a>
+                    <a href="#" class="footer">판매 및 환불 |</a>
+                    <a href="#" class="footer">법적 고지 |</a>
+                    <a href="#" class="footer">사이트 맵</a>
+                </div>
+                <div class="korea">
+                    <p>대한민국</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>
